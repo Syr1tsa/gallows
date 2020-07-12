@@ -38,8 +38,8 @@ class Game
   end
 
   def normalize_letter(letter)
-    return "Е" if letter.downcase == "ё"
-    return "И" if letter.downcase == "й"
+    if letter == "Ё" return "Е"
+    if letter == "Й" return "И"
     return letter
   end
 
