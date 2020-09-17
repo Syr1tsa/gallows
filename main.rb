@@ -14,7 +14,7 @@ console_interface = ConsoleInterface.new(game)
 until game.over?
   # 3.1. Вывести новое состояние игры
   console_interface.print_out
-  # 3.2  Спросить очередную букву
+  # 3.2  Спросить очередную буквуk
   letter = console_interface.get_input
   # 3.3  Обновить состояние игры
   game.play!(letter)
