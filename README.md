@@ -9,5 +9,5 @@
 * 7 попыток 
 
 ## Чтобы начать игру:
-` bundle install
-ruby main.rb`
+`bundle install`
+`ruby main.rb`
