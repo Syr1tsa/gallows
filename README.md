@@ -9,5 +9,7 @@
 * 7 попыток 
 
 ## Чтобы начать игру:
-1) `bundle install`
-2) `ruby main.rb`
+```
+bundle install
+bundle exec ruby main.rb
+```
