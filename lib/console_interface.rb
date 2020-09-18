@@ -29,19 +29,17 @@ class ConsoleInterface
   end
 
   def figure
-    return FIGURES[@game.errors_made]
+    FIGURES[@game.errors_made]
   end
 
   def word_to_show
-    result =
-      @game.letters_to_guess.map do |letter|
-        if letter == nil
-          "__"
-        else
-          letter
-        end
+    @game.letters_to_guess.map do |letter|
+      if letter == nil
+        "__"
+      else
+        letter
       end
-    result.join(" ")
+    end.join(" ")
   end
 
   def errors_to_show
